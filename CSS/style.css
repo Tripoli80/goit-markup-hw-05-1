@@ -715,7 +715,7 @@ button {
 .pf-overlay {
   position: absolute;
   top: 100%;
-  opacity: 1;
+  opacity: 0.9;
   background-color: var(--theme-color);
   padding: 63px 24px;
   width: 100%;
