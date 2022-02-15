@@ -117,6 +117,8 @@ button {
   color: var(--text-primary);
   position: relative;
   transition-property: color;
+  transition-duration: var(--time);
+  transition-timing-function: var(--functional-cubic);
 }
 
 .nav .current {
@@ -137,8 +139,7 @@ button {
 .nav .link:focus {
   color: var(--theme-color);
 
-  transition-duration: var(--time);
-  transition-timing-function: var(--functional-cubic);
+  
 }
 .e-header {
   border-bottom: 1px solid #ececec;
@@ -156,6 +157,8 @@ button {
   font-weight: 500;
   color: var(--text-secondary);
   transition-property: color;
+  transition-duration: var(--time);
+  transition-timing-function: var(--functional-cubic);
 }
 
 .heder-contact-list {
@@ -169,8 +172,7 @@ button {
 
 .heder-contact-item:hover {
   fill: var(--theme-color);
-  transition-duration: var(--time);
-  transition-timing-function: var(--functional-cubic);
+  
 }
 .heder-contact-item:not(:first-child) {
   /* width: calc(100% / 2 - 30px); */
@@ -189,6 +191,8 @@ button {
   height: 16px;
   fill: var(--text-secondary);
   transition-property: fill;
+  transition-duration: var(--time);
+  transition-timing-function: var(--functional-cubic);
 }
 .heder-contact-icon-tel {
   margin-right: 10px;
@@ -196,14 +200,15 @@ button {
   height: 16px;
   fill: var(--text-secondary);
   transition-property: fill;
+  transition-duration: var(--time);
+  transition-timing-function: var(--functional-cubic);
 }
 
 .contact:hover,
 .contact:focus {
   color: var(--theme-color);
   fill: var(--theme-color);
-  transition-duration: var(--time);
-  transition-timing-function: var(--functional-cubic);
+  
 }
 
 .contact:hover .heder-contact-icon-mail,
@@ -211,8 +216,7 @@ button {
 .contact:focus .heder-contact-icon-mail,
 .contact:focus .heder-contact-icon-tel {
   fill: var(--theme-color);
-  transition-duration: var(--time);
-  transition-timing-function: var(--functional-cubic);
+
 }
 /* .contact:focus .heder-contact-icon {
   
@@ -538,22 +542,18 @@ button {
 .our-client-box:hover,
 .our-client-box:focus {
   border-color: #2196f3;
-  /* transition-duration: var(--time);
-  transition-timing-function: var(--functional-cubic); */
 }
 .client-icon {
   width: 106px;
   height: 60px;
   transition-property: fill;
-
   fill: var(--social-color-primary);
 }
 .client-link:hover .client-icon,
 .client-link:focus .client-icon,
 .our-client-box:hover .client-icon,
 .our-client-box:focus .client-icon {
-  fill: #2196f3;
-  
+  fill: #2196f3;  
 }
 
 /* подвал */
@@ -649,6 +649,8 @@ button {
   line-height: 2;
   font-size: 18px;
   transition-property: color;
+  transition-duration: var(--time);
+  transition-timing-function: var(--functional-cubic);
 }
 .portfolio-filter-item:not(:last-child) {
   margin-right: 10px;
@@ -670,9 +672,7 @@ button {
   text-align: center;
   border-radius: 4px;
   border: 0;
-  /* transition-property: background-color box-shadow;
-  transition-duration: var(--time);
-  transition-timing-function: var(--functional-cubic); */
+ 
 
 }
 
@@ -693,13 +693,12 @@ border-radius: 4px;
     
 }
 
-.exp-butt-txt:hover,
-.exp-butt-txt:focus {
+.portfolio-exp-button:hover .exp-butt-txt,
+.portfolio-exp-button:focus .exp-butt-txt {
   cursor: pointer;
   color: var(--text-secondary-liter);
   background-color: var(--theme-color);
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--text-secondary-liter);
  
 }
